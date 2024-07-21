@@ -1,4 +1,4 @@
-package airoprt;
+package airport;
 
 import nationality.City;
 import org.springframework.data.jpa.repository.JpaRepository;

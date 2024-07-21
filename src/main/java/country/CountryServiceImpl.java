@@ -4,41 +4,36 @@ import continent.Continent;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class CountryServiceImpl implements CountryService {
+
     private List<Country> countries = new ArrayList<>();
     private int nextId = 1;
 
-    @Override
     public List<Country> getAllCountries() {
-        return countries;
+        return new ArrayList<>(countries); // Return a copy to prevent external modification
     }
 
-    @Override
     public List<Country> getCountriesByContinent(Continent continent) {
         return countries.stream()
                 .filter(country -> country.getContinent().getId() == continent.getId())
                 .collect(Collectors.toList());
     }
 
-    @Override
     public Country getCountryById(int id) {
-        for (Country country : countries) {
-            if (country.getId() == id) {
-                return country;
-            }
-        }
-        return null;
+        Optional<Country> foundCountry = countries.stream()
+                .filter(country -> country.getId() == id)
+                .findFirst();
+        return foundCountry.orElse(null); // Return null if not found
     }
 
-    @Override
     public void addCountry(Country country) {
         country.setId(nextId++);
         countries.add(country);
     }
 
-    @Override
     public void updateCountry(int id, Country updatedCountry) {
         for (int i = 0; i < countries.size(); i++) {
             if (countries.get(i).getId() == id) {
@@ -46,11 +41,10 @@ public class CountryServiceImpl implements CountryService {
                 return;
             }
         }
+        // Optionally throw an exception if country with given id not found
     }
 
-    @Override
     public void deleteCountry(int id) {
         countries.removeIf(country -> country.getId() == id);
     }
 }
-

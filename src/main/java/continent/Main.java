@@ -9,6 +9,7 @@ public class Main {
         // Adding continents
         continentService.addContinent(new Continent(1, "Asia"));
         continentService.addContinent(new Continent(2, "Europe"));
+        continentService.addContinent(new Continent(3, "America"));
 
         // Retrieving all continents
         List<Continent> allContinents = continentService.getAllContinents();
@@ -17,11 +18,11 @@ public class Main {
             System.out.println(continent.getId() + ": " + continent.getName());
         }
 
-        // Updating a continent
+
         Continent updatedContinent = new Continent(2, "Europe (updated)");
         continentService.updateContinent(2, updatedContinent);
 
-        // Deleting a continent
+
         continentService.deleteContinent(1);
 
         // Retrieving a continent by ID

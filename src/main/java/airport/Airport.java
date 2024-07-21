@@ -1,4 +1,4 @@
-package airoprt;
+package airport;
 
 import jakarta.persistence.*;
 import nationality.City;

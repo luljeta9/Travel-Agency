@@ -1,9 +1,6 @@
 package tour;
 
-import airoprt.Airport;
-import hotel.Hotel;
 import jakarta.persistence.*;
-import nationality.City;
 
 import java.time.LocalDate;
 
@@ -61,6 +58,6 @@ public class Tour {
     @Column(nullable = false)
     private int numberOfChildPlaces;
 
-    // Getters and setters, constructors
+
 }
 

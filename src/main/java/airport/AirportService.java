@@ -1,4 +1,4 @@
-package airoprt;
+package airport;
 
 import java.util.List;
 

@@ -1,14 +1,14 @@
 package user;
 
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/users")
 public class UserController {
 
-    @Autowired
-    private UserService userService;
+
+    private UserServic userService;
 
     @PutMapping("/{userId}")
     public User updateUser(@PathVariable Long userId, @RequestBody User updatedUser) {
