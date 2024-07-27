@@ -1,4 +1,4 @@
-package tour;
+package al.sda.demo.tour;
 
 import java.util.List;
 

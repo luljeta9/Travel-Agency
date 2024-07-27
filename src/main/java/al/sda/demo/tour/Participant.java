@@ -1,4 +1,4 @@
-package tour;
+package al.sda.demo.tour;
 
 public class Participant {
     private Long id;

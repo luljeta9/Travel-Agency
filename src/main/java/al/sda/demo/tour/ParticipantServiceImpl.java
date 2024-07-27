@@ -1,4 +1,4 @@
-package tour;
+package al.sda.demo.tour;
 
 import org.springframework.stereotype.Service;
 

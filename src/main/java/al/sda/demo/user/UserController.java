@@ -1,4 +1,4 @@
-package user;
+package al.sda.demo.user;
 
 
 import org.springframework.data.domain.Page;
@@ -30,7 +30,7 @@ public class UserController {
     
     @GetMapping
     public ResponseEntity<Page<UserDto>> getAllUsers(@RequestParam(defaultValue = "0") int page,
-                                                     @RequestParam(defaultValue = "10") int size) {
+                                                          @RequestParam(defaultValue = "10") int size) {
         return ResponseEntity.ok(userService.getAllUsers(page, size));
     }
     

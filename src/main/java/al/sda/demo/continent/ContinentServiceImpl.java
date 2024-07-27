@@ -1,11 +1,11 @@
-package continent;
+package al.sda.demo.continent;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ContinentServiceImpl implements ContinentService {
 
-    private List<Continent> continents = new ArrayList<>();
+    private List<Continent> continents = new ArrayList<Continent>();
     private int nextId = 1;
 
     public List<Continent> getAllContinents() {

@@ -1,6 +1,6 @@
-package country;
+package al.sda.demo.country;
 
-import continent.Continent;
+import al.sda.demo.continent.Continent;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,10 +23,9 @@ public class CountryServiceImpl implements CountryService {
     }
 
     public Country getCountryById(int id) {
-        Optional<Country> foundCountry = countries.stream()
+       return countries.stream()
                 .filter(country -> country.getId() == id)
-                .findFirst();
-        return foundCountry.orElse(null); // Return null if not found
+                .findFirst().orElse(null);// Return null if not found
     }
 
     public void addCountry(Country country) {

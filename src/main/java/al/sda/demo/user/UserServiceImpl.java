@@ -1,4 +1,4 @@
-package user;
+package al.sda.demo.user;
 
 import jakarta.persistence.EntityExistsException;
 import jakarta.persistence.EntityNotFoundException;

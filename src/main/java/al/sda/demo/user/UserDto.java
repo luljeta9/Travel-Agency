@@ -1,4 +1,4 @@
-package user;
+package al.sda.demo.user;
 
 public class UserDto {
     private Long id;

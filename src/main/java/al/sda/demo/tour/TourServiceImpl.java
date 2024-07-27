@@ -1,5 +1,7 @@
-package tour;
+package al.sda.demo.tour;
 
+import al.sda.demo.tour.Tour;
+import al.sda.demo.tour.TourRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

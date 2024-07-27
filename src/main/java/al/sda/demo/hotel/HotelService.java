@@ -1,4 +1,4 @@
-package hotel;
+package al.sda.demo.hotel;
 
 import java.util.List;
 

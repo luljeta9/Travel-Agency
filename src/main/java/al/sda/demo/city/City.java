@@ -1,4 +1,4 @@
-package nationality;
+package al.sda.demo.city;
 
 import jakarta.persistence.*;
 @Entity
@@ -16,18 +16,22 @@ public class City {
 
 
 
-    private Nationality nationality;  // Foreign key reference
+    private City city ;  // Foreign key reference
 
-    // Constructors, getters, and setters
-    public City() {
+    // Cgs
+
+    public City(City city) {
+        this.city = city;
     }
 
-    public City(String name, Nationality nationality) {
-        this.name = name;
-        this.nationality = nationality;
+    public City getCity() {
+        return city;
     }
 
-    // Getters and setters
+    public void setCity(City city) {
+        this.city = city;
+    }
+
     public Long getId() {
         return id;
     }
@@ -44,13 +48,8 @@ public class City {
         this.name = name;
     }
 
-    public Nationality getNationality() {
-        return nationality;
-    }
 
-    public void setNationality(Nationality nationality) {
-        this.nationality = nationality;
-    }
+
 
 
 

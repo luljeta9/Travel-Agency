@@ -1,6 +1,7 @@
-package hotel;
+package al.sda.demo.hotel;
 
-import nationality.City;
+
+import al.sda.demo.city.City;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

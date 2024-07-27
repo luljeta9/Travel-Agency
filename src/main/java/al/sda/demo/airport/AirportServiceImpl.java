@@ -1,4 +1,4 @@
-package airport;
+package al.sda.demo.airport;
 
 import org.springframework.stereotype.Service;
 
@@ -21,8 +21,8 @@ public class AirportServiceImpl implements AirportService {
         // Retrieve the existing airport entity by its id from the repository
         Airport existingAirport = airportRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Airport not found"));
-        // existingAirport.setName(airport.getName());
-        // existingAirport.setDesignatedCity(airport.getDesignatedCity());
+        // existingsetName(getName());
+        // existingsetDesignatedCity(getDesignatedCity());
 
         return airportRepository.save(existingAirport);
     }

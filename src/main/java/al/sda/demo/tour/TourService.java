@@ -1,4 +1,6 @@
-package tour;
+package al.sda.demo.tour;
+
+import al.sda.demo.tour.Tour;
 
 import java.util.List;
 

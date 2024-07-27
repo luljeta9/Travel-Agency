@@ -1,4 +1,4 @@
-package hotel;
+package al.sda.demo.hotel;
 
 import org.springframework.stereotype.Service;
 
@@ -21,12 +21,13 @@ public class HotelServiceImpl implements HotelService {
         Hotel existingHotel = hotelRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Hotel not found"));
 
-        // existingHotel.setName(hotel.getName());
-        // existingHotel.setStandard(hotel.getStandard());
-        // existingHotel.setDescription(hotel.getDescription());
-        // existingHotel.setDesignatedCity(hotel.getDesignatedCity());
+        // existingsetName(getName());
+        // existingsetStandard(getStandard());
+        // existingsetDescription(getDescription());
+        // existingsetDesignatedCity(getDesignatedCity());
         return hotelRepository.save(existingHotel);
     }
+
 
     public void deleteHotel(Long id) {
         hotelRepository.deleteById(id);

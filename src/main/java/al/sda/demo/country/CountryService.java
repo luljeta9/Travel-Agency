@@ -1,6 +1,7 @@
-package country;
+package al.sda.demo.country;
 
-import continent.Continent;
+
+import al.sda.demo.continent.Continent;
 
 import java.util.List;
 

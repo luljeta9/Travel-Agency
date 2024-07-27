@@ -1,7 +1,8 @@
-package airport;
+package al.sda.demo.airport;
 
+import al.sda.demo.city.City;
 import jakarta.persistence.*;
-import nationality.City;
+
 @Entity
 @Table(name = "airports")
 
@@ -18,5 +19,5 @@ public class Airport {
     @JoinColumn(name = "city_id", nullable = false)
     private City designatedCity; // foreign key reference to the City entity
 
-    // Constructors, getters, and setters
+    // Csg
 }

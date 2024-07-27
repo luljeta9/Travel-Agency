@@ -1,7 +1,8 @@
-package hotel;
+package al.sda.demo.hotel;
 
+import al.sda.demo.city.City;
 import jakarta.persistence.*;
-import nationality.City;
+
 
 @Entity
 @Table(name = "hotels")

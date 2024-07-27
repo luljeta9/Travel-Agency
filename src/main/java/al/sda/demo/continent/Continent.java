@@ -1,4 +1,4 @@
-package continent;
+package al.sda.demo.continent;
 
 public class Continent {
     private int id;

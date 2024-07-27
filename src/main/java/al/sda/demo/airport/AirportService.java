@@ -1,4 +1,4 @@
-package airport;
+package al.sda.demo.airport;
 
 import java.util.List;
 

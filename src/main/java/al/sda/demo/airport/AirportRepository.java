@@ -1,6 +1,7 @@
-package airport;
+package al.sda.demo.airport;
 
-import nationality.City;
+
+import al.sda.demo.city.City;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
