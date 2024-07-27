@@ -1,41 +1,39 @@
-package al.sda.demo.country;
+package al.sda.demo.country.model;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Enumerated;
 
-import al.sda.demo.continent.Continent;
-
-public class Country {
-    private int id;
+public class CountryDto {
+    private Long id;
     private String name;
-    private Continent continent; // Foreign key relationship
-
-    // Constructors
-    public Country(int id, String name, Continent continent) {
+    private Continent continent;
+    
+    public CountryDto(Long id, String name, Continent continent) {
         this.id = id;
         this.name = name;
         this.continent = continent;
     }
-
-    // Getters and Setters
-    public int getId() {
+    
+    public Long getId() {
         return id;
     }
-
-    public void setId(int id) {
+    
+    public void setId(Long id) {
         this.id = id;
     }
-
+    
     public String getName() {
         return name;
     }
-
+    
     public void setName(String name) {
         this.name = name;
     }
-
+    
     public Continent getContinent() {
         return continent;
     }
-
+    
     public void setContinent(Continent continent) {
         this.continent = continent;
     }

@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class AirportServiceImpl implements AirportService {
+public class AirportServiceImpl {
 
     private final AirportRepository airportRepository;
 
@@ -21,8 +21,8 @@ public class AirportServiceImpl implements AirportService {
         // Retrieve the existing airport entity by its id from the repository
         Airport existingAirport = airportRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Airport not found"));
-        // existingsetName(getName());
-        // existingsetDesignatedCity(getDesignatedCity());
+        existingAirport.setName(airport.getName());
+        existingAirport.setDesignatedCity(airport.getDesignatedCity());
 
         return airportRepository.save(existingAirport);
     }

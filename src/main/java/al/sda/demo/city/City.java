@@ -13,25 +13,7 @@ public class City {
 
     @Column(nullable = false)
     private String name;
-
-
-
-    private City city ;  // Foreign key reference
-
-    // Cgs
-
-    public City(City city) {
-        this.city = city;
-    }
-
-    public City getCity() {
-        return city;
-    }
-
-    public void setCity(City city) {
-        this.city = city;
-    }
-
+    
     public Long getId() {
         return id;
     }
