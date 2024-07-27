@@ -2,6 +2,7 @@ package al.sda.demo.country.controller;
 
 import al.sda.demo.country.model.CountryDto;
 import al.sda.demo.country.service.CountryService;
+import al.sda.demo.util.RestUtil;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -46,11 +47,7 @@ public class CountryController {
     public ResponseEntity<Void> createCountry(@RequestBody CountryDto countryDto) {
         Long id = countryService.createCountry(countryDto);
        
-        URI location = ServletUriComponentsBuilder.fromCurrentRequestUri()
-                               .path(id.toString())
-                               .build()
-                               .toUri();
-        
+        URI location = RestUtil.locationBuilder(id.toString());
         return ResponseEntity.created(location)
                        .build();
     }

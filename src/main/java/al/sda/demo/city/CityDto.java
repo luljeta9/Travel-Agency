@@ -1,46 +1,34 @@
 package al.sda.demo.city;
 
-import al.sda.demo.country.model.Country;
-import jakarta.persistence.*;
-@Entity
+import al.sda.demo.country.model.CountryDto;
 
-@Table(name = "cities")
-
-public class City {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class CityDto {
     private Long id;
-
-    @Column(nullable = false)
     private String name;
+    private CountryDto country;
     
-    @Column(nullable = false)
-    @ManyToOne
-    private Country country;
     
     public Long getId() {
         return id;
     }
-
+    
     public void setId(Long id) {
         this.id = id;
     }
-
+    
     public String getName() {
         return name;
     }
-
+    
     public void setName(String name) {
         this.name = name;
     }
     
-    
-    public Country getCountry() {
+    public CountryDto getCountry() {
         return country;
     }
     
-    public void setCountry(Country country) {
+    public void setCountry(CountryDto country) {
         this.country = country;
     }
 }

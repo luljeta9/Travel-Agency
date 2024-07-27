@@ -1,4 +1,4 @@
-package al.sda.demo.airport;
+package al.sda.demo.airport.model;
 
 import al.sda.demo.city.City;
 import jakarta.persistence.*;
@@ -9,11 +9,13 @@ import jakarta.persistence.*;
 public class Airport {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Long id; // unique identifier for the airport
 
     @Column(nullable = false)
     private String name;
+    
+    @Column(nullable = false, unique = true)
+    private String code;
 
     @ManyToOne
     @JoinColumn(name = "city_id", nullable = false)
@@ -43,5 +45,11 @@ public class Airport {
         this.designatedCity = designatedCity;
     }
     
-    // Csg
+    public String getCode() {
+        return code;
+    }
+    
+    public void setCode(String code) {
+        this.code = code;
+    }
 }
