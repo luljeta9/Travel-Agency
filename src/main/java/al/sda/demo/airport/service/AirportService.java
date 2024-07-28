@@ -62,5 +62,6 @@ public class AirportService {
                        .stream()
                        .map(AirportMapper::toDto)
                        .toList();
+
     }
 }

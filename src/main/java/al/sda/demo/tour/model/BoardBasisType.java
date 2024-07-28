@@ -1,4 +1,4 @@
-package al.sda.demo.tour;
+package al.sda.demo.tour.model;
 
 public enum BoardBasisType {
     BB, // Bed & Breakfast

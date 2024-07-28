@@ -1,4 +1,6 @@
-package al.sda.demo.tour;
+package al.sda.demo.participant;
+
+import al.sda.demo.participant.model.Participant;
 
 import java.util.List;
 

@@ -1,5 +1,9 @@
-package al.sda.demo.tour;
+package al.sda.demo.participant;
 
+import al.sda.demo.participant.model.Participant;
+import al.sda.demo.participant.repository.ParticipantRepository;
+import al.sda.demo.tour.model.Tour;
+import al.sda.demo.tour.repository.TourRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
