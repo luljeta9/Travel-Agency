@@ -14,8 +14,7 @@ public class City {
 
     @Column(nullable = false)
     private String name;
-    
-    @Column(nullable = false)
+
     @ManyToOne
     private Country country;
     

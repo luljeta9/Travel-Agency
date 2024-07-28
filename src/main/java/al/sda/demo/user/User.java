@@ -24,7 +24,7 @@ public class User implements Serializable {
     private String lastName;
     private LocalDate birthday;
 
-    // No-arg constructor
+
     public User() {
         // Initialize with default values
         this.firstName = "";

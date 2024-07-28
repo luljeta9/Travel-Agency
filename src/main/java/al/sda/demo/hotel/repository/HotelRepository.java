@@ -1,7 +1,8 @@
-package al.sda.demo.hotel;
+package al.sda.demo.hotel.repository;
 
 
 import al.sda.demo.city.City;
+import al.sda.demo.hotel.model.Hotel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -10,8 +11,7 @@ import java.util.List;
 @Repository
 public interface HotelRepository extends JpaRepository<Hotel, Long> {
 
-    // You can define custom query methods here if needed
-    // For example, finding hotels by city
-    List<Hotel> findByDesignatedCity(City city);
+    boolean existsByName(String name);
 }
+
 

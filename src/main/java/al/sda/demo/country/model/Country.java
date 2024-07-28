@@ -1,14 +1,10 @@
 package al.sda.demo.country.model;
 
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
+import al.sda.demo.city.City;
+import jakarta.persistence.*;
+
+import java.util.Set;
 
 @Entity
 @Table(name = "countries")
@@ -23,6 +19,9 @@ public class Country {
     @Column(nullable = false)
     private Continent continent; // Foreign key relationship
 
+    @OneToMany
+    @JoinColumn(name = "country")
+    private Set<City> cities;
     public Long getId() {
         return id;
     }
