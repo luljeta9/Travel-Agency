@@ -1,6 +1,6 @@
 package al.sda.demo.airport.model;
 
-import al.sda.demo.city.CityDto;
+import al.sda.demo.city.model.CityDto;
 
 public class AirportDto {
     private Long id;

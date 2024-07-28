@@ -1,7 +1,7 @@
 package al.sda.demo.city.mapper;
 
-import al.sda.demo.city.City;
-import al.sda.demo.city.CityDto;
+import al.sda.demo.city.model.City;
+import al.sda.demo.city.model.CityDto;
 import al.sda.demo.country.mapper.CountryMapper;
 
 public class CityMapper {

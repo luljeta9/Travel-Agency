@@ -1,7 +1,7 @@
 package al.sda.demo.country.model;
 
 
-import al.sda.demo.city.City;
+import al.sda.demo.city.model.City;
 import jakarta.persistence.*;
 
 import java.util.Set;

@@ -1,7 +1,7 @@
 package al.sda.demo.tour;
 
 import al.sda.demo.airport.model.Airport;
-import al.sda.demo.city.City;
+import al.sda.demo.city.model.City;
 import al.sda.demo.hotel.model.Hotel;
 import jakarta.persistence.*;
 

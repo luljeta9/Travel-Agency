@@ -1,6 +1,6 @@
 package al.sda.demo.airport.model;
 
-import al.sda.demo.city.City;
+import al.sda.demo.city.model.City;
 import jakarta.persistence.*;
 
 @Entity

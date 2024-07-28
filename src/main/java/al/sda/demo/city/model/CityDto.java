@@ -1,13 +1,14 @@
-package al.sda.demo.city;
+package al.sda.demo.city.model;
 
+import al.sda.demo.country.model.Country;
 import al.sda.demo.country.model.CountryDto;
 
 public class CityDto {
     private Long id;
-    private String name;
-    private CountryDto country;
-    
-    
+    private static String name;
+    private static CountryDto country;
+
+
     public Long getId() {
         return id;
     }
@@ -24,7 +25,7 @@ public class CityDto {
         this.name = name;
     }
     
-    public CountryDto getCountry() {
+    public static CountryDto getCountry() {
         return country;
     }
     
