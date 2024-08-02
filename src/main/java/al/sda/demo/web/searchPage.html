@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Tours</title>
+    <style>
+        /* Add styles here */
+    </style>
+</head>
+<body>
+<header>
+    <h1>Travel Agency - Search Tours</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="search.html">Search Tours</a></li>
+            <li><a href="admin.html">Admin</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+</header>
+<main>
+    <h2>Search for Tours</h2>
+    <form action="search_results.php" method="GET">
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination"><br>
+        <label for="date">Travel Date:</label>
+        <input type="date" id="date" name="date"><br>
+        <label for="people">Number of People:</label>
+        <input type="number" id="people" name="people"><br>
+        <input type="submit" value="Search">
+    </form>
+</main>
+
+</body>
+
+
+    <title>Visa & Passport Restrictions</title>
+    <style>
+        /* Add styles here */
+    </style>
+
+<body>
+<header>
+    <h2>Travel Agency - Visa & Passport Restrictions</h2>
+
+</header>
+<main>
+    <h3>Visa & Passport Requirements</h3>
+    <form action="visa_restrictions.php" method="POST">
+        <label for="destination">Destination:</label>
+        <!--<input type="text" id="destination" name="destination" required><br>  -->
+        <label for="nationality">Nationality:</label>
+        <input type="text" id="nationality" name="nationality" required><br>
+        <input type="submit" value="Check Requirements">
+    </form>
+</main>
+
+
+</body>
+
+
+<main>
+    <h4>Set Up New Tour Offer</h4>
+    <form action="submit_tour_offer.php" method="POST">
+        <label for="tourName">Tour Name:</label>
+        <input type="text" id="tourName" name="tourName" required><br>
+        <label for="destination">Destination:</label>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" required><br>
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br>
+        <input type="submit" value="Submit Tour Offer">
+    </form>
+</main>
+<footer>
+    <p>&copy; 2024 Travel Agency. All rights reserved.</p>
+</footer>
+
+
+

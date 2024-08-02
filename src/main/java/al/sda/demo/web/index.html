@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <!-- Include Bootstrap CSS for styling -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <!-- Form -->
+    <form>
+        <div class="mb-3">
+            <label for="emailInput" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="passwordInput" class="form-label">Password</label>
+            <input type="password" class="form-control" id="passwordInput">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+
+    <hr>
+
+    <!-- Dropdowns -->
+    <div>
+        <select class="form-select mb-3" id="continentSelect">
+            <option value="Continent">Continent</option>
+            <option value="Europe">Europe</option>
+            <option value="Asia">Asia</option>
+            <option value="America">America</option>
+        </select>
+
+        <select class="form-select mb-3" id="countrySelect">
+            <option value="Country">Country</option>
+            <option value="Albania">Albania</option>
+            <option value="France">France</option>
+            <option value="Japan">Japan</option>
+            <option value="Canada">Canada</option>
+        </select>
+
+        <select class="form-select mb-3" id="citySelect">
+            <option value="City">City</option>
+            <option value="Gjirokaster">Gjirokaster</option>
+            <option value="Paris">Paris</option>
+            <option value="Tokyo">Tokyo</option>
+            <option value="Montreal">Montreal</option>
+        </select>
+
+        <div id="testDiv"></div>
+        <button class="btn btn-primary mb-3" id="registerButton">Register</button>
+
+        <hr>
+
+        <!-- Table -->
+        <div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Continent</th>
+                    <th>Country</th>
+                    <th>City</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody id="tableBody">
+                <!-- Table rows will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and dependencies for functionality -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Include your custom JavaScript file -->
+    <script src="script.js"></script>
+
+
+
+</div>
+</body>
+</html>

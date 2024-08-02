@@ -1,19 +1,13 @@
 package al.sda.demo.city.controller;
 
-import al.sda.demo.city.mapper.CityMapper;
-import al.sda.demo.city.model.City;
 import al.sda.demo.city.model.CityDto;
-import al.sda.demo.city.service.CityService;
-import al.sda.demo.country.model.CountryDto;
-import al.sda.demo.country.service.CountryService;
+import al.sda.demo.city.CityService;
 import al.sda.demo.util.RestUtil;
-import com.fasterxml.jackson.annotation.JacksonInject;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/cities")

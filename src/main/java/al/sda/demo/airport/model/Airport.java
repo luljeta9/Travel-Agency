@@ -6,7 +6,8 @@ import jakarta.persistence.*;
 @Entity
 @Table(name = "airports")
 
-public class Airport {
+public class
+Airport {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id; // unique identifier for the airport
