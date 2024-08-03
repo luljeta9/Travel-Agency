@@ -19,8 +19,8 @@ public class Country {
     @Column(nullable = false)
     private Continent continent; // Foreign key relationship
 
-    @OneToMany
-    @JoinColumn(name = "country")
+    @OneToMany(mappedBy = "country")
+
     private Set<City> cities;
     public Long getId() {
         return id;

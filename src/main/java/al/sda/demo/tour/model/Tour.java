@@ -1,5 +1,8 @@
 package al.sda.demo.tour.model;
 
+import al.sda.demo.airport.model.Airport;
+import al.sda.demo.city.model.City;
+import al.sda.demo.hotel.model.Hotel;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
@@ -13,23 +16,23 @@ public class Tour {
 
     @ManyToOne
     @JoinColumn(name = "from_city_id")
-    private  String fromCity;
+    private  City fromCity;
 
     @ManyToOne
     @JoinColumn(name = "from_airport_id")
-    private String fromAirport;
+    private Airport fromAirport;
 
     @ManyToOne
     @JoinColumn(name = "to_city_id")
-    private String toCity;
+    private City toCity;
 
     @ManyToOne
     @JoinColumn(name = "to_hotel_id")
-    private String toHotel;
+    private Hotel toHotel;
 
     @ManyToOne
     @JoinColumn(name = "to_airport_id")
-    private String toAirport;
+    private Airport toAirport;
 
     @Column(nullable = false)
     private LocalDate departureDate;

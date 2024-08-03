@@ -19,16 +19,10 @@ public class City {
     @Column(nullable = false,unique = true)
     private String name;
 
-    @Enumerated(jakarta.persistence.EnumType.STRING)
-    @Column(nullable = false)
-    // Foreign key relationship
-
     @ManyToOne
+    @JoinColumn(name="country_id")
     private Country country;
 
-
-    @JoinColumn(name = "city")
-    private Set<Country> cities;
     public Long getId() {
         return id;
     }

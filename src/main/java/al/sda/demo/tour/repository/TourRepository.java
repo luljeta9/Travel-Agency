@@ -10,6 +10,6 @@ import java.util.Optional;
 @Repository
 public interface TourRepository extends JpaRepository<Tour, Long> {
 
-    Optional<Tour> findByName(String name);
+
 
 }

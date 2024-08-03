@@ -20,7 +20,7 @@ public class CityController {
     }
 
     @GetMapping
-    public ResponseEntity<List<CityDto>> getCountryList(@RequestParam(defaultValue = "0") int page,
+    public ResponseEntity<List<CityDto>> getCountryList(@RequestParam(defaultValue = "0") int page,   //pagination per arsye performance si instagram
                                                            @RequestParam(defaultValue = "10") int size) {
         List<CityDto> resultSet = cityService.getCityList(page, size);
         return ResponseEntity.ok(resultSet);

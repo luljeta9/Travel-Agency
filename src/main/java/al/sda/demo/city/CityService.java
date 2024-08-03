@@ -35,7 +35,7 @@ public class CityService {
         return repository.findAll(pageable).getContent()
                 .stream()
                 .map(CityMapper::toDto)
-                .toList();
+                .collect(Collectors.toList());     //mutable collection i ndryshueshem ,heq shtoj  toList  ,, ne nivel servis mund ta lem List() immutable
     }
 
 
